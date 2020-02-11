@@ -3,7 +3,7 @@ dependencies = ['Person']
 PersonController = (Person) ->
   vm = this
   vm.data = []
-  vm.updateData = []
+  vm.newPerson = []
 
   Person.get().then (data) ->
     vm.data = data.data
@@ -11,6 +11,10 @@ PersonController = (Person) ->
 
   vm.delItem = (item, index) ->
     vm.data.splice(index, 1)
+    vm.data
+
+  vm.addItem = () ->
+    vm.data.push(Object.assign({}, this.newPerson))
     vm.data
 
   return

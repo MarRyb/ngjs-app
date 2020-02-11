@@ -5,7 +5,7 @@ router = ($stateProvider, $locationProvider, $urlRouterProvider) ->
     .state 'public',
       abstract: true
       url: ''
-      redirectTo: 'public.index'
+      redirectTo: 'public.person'
       component: 'publicState'
 
   $urlRouterProvider.when "/", "/index"

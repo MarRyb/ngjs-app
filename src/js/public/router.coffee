@@ -2,9 +2,9 @@ dependencies = ['$stateProvider']
 router = ($stateProvider) ->
 
   $stateProvider
-    .state 'public.index',
+    .state 'public.person',
       url: '/index'
-      component: 'publicIndexPage'
+      component: 'personPage'
 
 
 angular.module('app').config dependencies.concat router

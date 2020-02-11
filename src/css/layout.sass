@@ -46,3 +46,14 @@ tbody tr:hover
 
 a:hover
   color: red
+
+.persons-container
+  display: flex
+  flex-wrap: wrap
+
+.person-block
+  flex-basis: 30%
+  border: 1px solid #ccc
+
+  &:nth-child(3n)
+    flex-basis: 40%

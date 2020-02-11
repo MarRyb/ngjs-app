@@ -1,0 +1,7 @@
+.persons-container
+  .person-block(ng-repeat="item in personsBlocksCtrl.personsService.items track by $index")
+    dl
+      div(ng-repeat="(k, v) in item")
+        dt {{k}}
+        dd {{v}}
+    a(href="#" ng-click="personsBlocksCtrl.delItem($index)") Delete

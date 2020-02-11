@@ -5,8 +5,7 @@ Person = ($http, dataConvertSerializer) ->
       $http(
         method: 'GET'
         url: 'api/person.json'
-        transformResponse: dataConvertSerializer.serialize
-        )
-
+        transformResponse: dataConvertSerializer
+      )
 
 angular.module('app').factory 'Person', dependencies.concat Person

@@ -1,45 +1,46 @@
-table(class="table table-striped")
-  thead(class="thead-dark")
-    tr(class="table_tr")
-      th {{'Action'}}
-      th {{'CARD'}}
-      th {{'LASTNAME'}}
-      th {{'FIRSTNAME'}}
-      th {{'PATRONYMIC'}}
-      th {{'IDPERSON'}}
-      th {{'STATUSNAME'}}
-      th {{'ACC1NUM'}}
-      th {{'CARDTEMPLNAME'}}
-      th {{'ORGNAMESHORT'}}
-      th {{'PERSONTYPENAME'}}
-      th {{'CURRNAME'}}
-      th {{'IDCARD'}}
-      th {{'BIRTHDATE'}}
-      th {{'DOCSERIES'}}
-      th {{'DOCNUM'}}
-      th {{'IDTASKAUTHSTATUS'}}
-      th {{'DOCTYPENAME'}}
-  tbody(ng-repeat="item in personCtrl.data track by $index")
-    tr(class="table_tr")
-      td(ng-click="personCtrl.delItem(item, $index)"
-         class="action_del") {{'DELETE'}}
-      td {{item.CARD}}
-      td {{item.LASTNAME}}
-      td {{item.FIRSTNAME}}
-      td {{item.PATRONYMIC}}
-      td {{item.IDPERSON}}
-      td {{item.STATUSNAME}}
-      td {{item.ACC1NUM}}
-      td {{item.CARDTEMPLNAME}}
-      td {{item.ORGNAMESHORT}}
-      td {{item.PERSONTYPENAME}}
-      td {{item.CURRNAME}}
-      td {{item.IDCARD}}
-      td {{item.BIRTHDATE}}
-      td {{item.DOCSERIES}}
-      td {{item.DOCNUM}}
-      td {{item.IDTASKAUTHSTATUS}}
-      td {{item.DOCTYPENAME}}
+div.sroll_table
+   table(class="table table-striped")
+     thead.thead-dark
+       tr.table_tr
+         th {{'Action'}}
+         th {{'CARD'}}
+         th.text-center {{'LASTNAME'}}
+         th.text-center {{'FIRSTNAME'}}
+         th {{'PATRONYMIC'}}
+         th {{'IDPERSON'}}
+         th {{'STATUSNAME'}}
+         th {{'ACC1NUM'}}
+         th {{'CARDTEMPLNAME'}}
+         th {{'ORGNAMESHORT'}}
+         th {{'PERSONTYPENAME'}}
+         th {{'CURRNAME'}}
+         th {{'IDCARD'}}
+         th {{'BIRTHDATE'}}
+         th {{'DOCSERIES'}}
+         th {{'DOCNUM'}}
+         th {{'IDTASKAUTHSTATUS'}}
+         th {{'DOCTYPENAME'}}
+     tbody(ng-repeat="item in personCtrl.data track by $index")
+       tr(class="table_tr")
+         td(ng-click="personCtrl.delItem(item, $index)"
+            class="action_del") {{'DELETE'}}
+         td {{item.CARD}}
+         td.text-center {{item.LASTNAME}}
+         td.text-center {{item.FIRSTNAME}}
+         td {{item.PATRONYMIC}}
+         td {{item.IDPERSON}}
+         td {{item.STATUSNAME}}
+         td {{item.ACC1NUM}}
+         td {{item.CARDTEMPLNAME}}
+         td {{item.ORGNAMESHORT}}
+         td {{item.PERSONTYPENAME}}
+         td {{item.CURRNAME}}
+         td {{item.IDCARD}}
+         td {{item.BIRTHDATE}}
+         td {{item.DOCSERIES}}
+         td {{item.DOCNUM}}
+         td {{item.IDTASKAUTHSTATUS}}
+         td {{item.DOCTYPENAME}}
 
 
 

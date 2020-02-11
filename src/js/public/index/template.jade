@@ -1,13 +1,15 @@
+div(ng-repeat="item in publicIndexCtrl.data")
+  div {{item | json}}
 
-p {{'Test task'}}
 
+br
 table(class="table table-striped")
   thead(class="thead-dark")
     tr
       th {{'Hu'}}
       th {{'Hu'}}
       th {{'Hu'}}
-  tbody    
+  tbody(ng-repeat="item in publicIndexCtrl.data")
     tr
       td {{'Hu'}}
       td {{'Hu'}}
@@ -24,3 +26,6 @@ table(class="table table-striped")
       td {{'Hu'}}
       td {{'Hu'}}
       td {{'Hu'}}
+
+
+

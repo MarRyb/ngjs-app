@@ -5,8 +5,7 @@ Person = ($http, dataConvertSerializer) ->
       $http(
         method: 'GET'
         url: 'api/person.json'
-        transformResponse: (data) ->
-          dataConvertSerializer.serialize(data)
+        transformResponse: dataConvertSerializer.serialize
         )
 
 

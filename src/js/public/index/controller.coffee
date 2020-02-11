@@ -2,9 +2,11 @@ dependencies = ['Person']
 
 PublicIndexController = (Person) ->
   vm = this
-  
-  Person.get().then ->
-    debugger
+  vm.data = []
+  Person.get().then (data) ->
+    vm.data = data.data
+    console.log(vm.data)
+
 
 
   return

@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@uirouter/angularjs": "1.0.13",
-    "angular": "1.6.8",
+    "angular": "1.8.0",
     "angular-animate": "1.6.9",
     "angular-cookie": "4.1.0",
     "angular-elastic": "2.5.1",

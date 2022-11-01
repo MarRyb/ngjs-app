@@ -29,7 +29,7 @@
     "bower": "1.8.2",
     "coffee-script": "1.12.7",
     "express": "^4.17.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-coffee": "^3.0.3",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
